@@ -38,6 +38,12 @@ a {
 
 /* layouts */
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
 .container {
     max-width: 1164px;
     margin: 0 auto;
@@ -51,11 +57,6 @@ a {
 .container-small {
     max-width: 880px;
     margin: 0 auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .col-4 {
@@ -73,3 +74,26 @@ a {
 .col-12 {
     flex-basis: calc((100% / 12) * 12);
 }
+
+*/
+
+/*navbar*/
+
+.navbar {
+    background-color: var(--blue);
+}
+
+.page-header .row {
+    justify-content: space-between;
+}
+
+.navbar-items {
+    display: flex;
+}
+
+/* RESPONSIVE
+breakpoint :
+576px
+768px
+1200px */ 
+
