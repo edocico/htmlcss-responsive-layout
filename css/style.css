@@ -16,6 +16,7 @@ menu {
 
 img {
     width: 100%;
+    display: block;
 }
 
 
@@ -114,6 +115,65 @@ a {
 
 /* features section */
 
+.features-section {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.card-body {
+    background-color: var(--light-blue);
+    border-radius: 20px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card-image {
+    background-color: var(--light-blue);
+}
+
+.card-body a {
+    background-color: var(--blue);
+    line-height: 40px;
+    color: var(--light);
+    border-radius: 30px;
+    padding: 0 40px;
+}
+
+.no-image {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+.demo {
+    padding-top: 38px;
+}
+
+.card-body i {
+    color: var(--blue);
+}
+
+.card-body h3 {
+    color: var(--blue);
+    margin-bottom: 30px;
+}
+
+.card-body a > i {
+    color: white;
+}
+
+.symbol {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.demo-p {
+    margin-bottom: 30px;
+}
+
+.app-store {
+    margin-bottom: 30px;
+}
 
 
 /* RESPONSIVE
@@ -124,10 +184,38 @@ breakpoint :
 
 @media screen and (min-width: 576px) {
    /*navbar*/
+   /*features section*/
+   .features-section .col {
+    padding: 0 30px;
+    margin-bottom: 25px;
+}    
 }
 
 @media screen and (min-width: 768px) {
     /*navbar*/
+    /*features section*/
+
+    .features-section .col {
+        padding: 0 12px;
+        margin-bottom: 0px;
+    }
+
+    .features-section .row {
+        row-gap: 24px;
+    }
+
+    .container {
+        max-width: 774px;
+        margin: 0 auto;
+    }
+
+    .col-8 {
+        flex-basis: calc((100% / 12) * 8);
+    }
+
+    .col-4 {
+        flex-basis: calc((100% / 12) * 4);
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -150,6 +238,12 @@ breakpoint :
 
     .navbar-items li {
         margin-left: 20px;
+    }
+
+    /*features section*/
+
+    .demo {
+        display: flex;
     }
     
 }
