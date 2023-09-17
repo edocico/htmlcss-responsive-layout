@@ -250,7 +250,23 @@ a {
     border-radius: 100%;
 }
 
+/*with-us*/
 
+.with-us {
+    background-color: var(--purple);
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.with-us h2 {
+    margin-bottom: 70px;
+}
+
+.with-us .col {
+    background-color: var(--light);
+    border-radius: 25px;
+    padding: 50px 30px;
+}
 
 
 
@@ -290,6 +306,13 @@ breakpoint :
 
     .testimonial-section .row {
         row-gap: 30px;
+    }
+
+    /*with-us*/
+
+    .with-us .container {
+        max-width: 512px;
+        margin: 0 auto; 
     }
 }
 
@@ -331,6 +354,9 @@ breakpoint :
         max-width: 714px;
         margin: 0 auto; 
     }
+
+    /*with-us*/
+
 
 }
 
@@ -383,5 +409,7 @@ breakpoint :
     .testimonial-section .col {
         display: flex;
     }
+
+    /*with-us*/
     
 }
