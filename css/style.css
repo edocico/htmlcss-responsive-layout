@@ -15,7 +15,7 @@ menu {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     display: block;
 }
 
@@ -127,6 +127,10 @@ a {
 
 /* features section */
 
+[class^='col'] > .card-body {
+    height: 100%;
+}
+
 .features-section {
     padding-top: 50px;
     padding-bottom: 80px;
@@ -143,6 +147,8 @@ a {
 .features-section .card-image {
     background-color: var(--light-blue);
 }
+
+
 
 .app-store {
     background-color: var(--blue);
@@ -188,6 +194,12 @@ a {
     margin-bottom: 30px;
 }
 
+.features-section .card-body p {
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 600;
+}
+
 /*planning section*/
 
 .planning-section {
@@ -202,7 +214,7 @@ a {
 
 .planning-section h2 {
     margin-bottom: 60px;
-    margin-top: 40px;
+    margin-top: 140px;
 }
 
 .planning-section h3 {
@@ -215,6 +227,11 @@ a {
     background-color: var(--purple);
     border-radius: 100%;
     padding: 15px 15px;
+}
+
+.planning-section .app-development img {
+    display: inline-block;
+    text-align: center;
 }
 
 /*testimonials section*/
@@ -248,6 +265,10 @@ a {
 
 .testimonial-section img {
     border-radius: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    max-width: 200px;
+    
 }
 
 /*with-us*/
@@ -263,9 +284,36 @@ a {
 }
 
 .with-us .col {
+    
+    
+    padding: 15px 15px;
+}
+
+.with-us .card {
     background-color: var(--light);
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 50px 30px;
+}
+
+.with-us .numbers {
+    font-size: 50px;
+    color: var(--purple);
+    font-weight: 700;
+}
+
+.with-us h3 {
+    color: var(--purple);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.with-us a {
+    margin-top: 30px;
+    background-color: var(--purple);
+    color: var(--light);
+    line-height: 2;
+    padding: 5px 50px;
+    border-radius: 30px;
 }
 
 
@@ -314,11 +362,20 @@ breakpoint :
         max-width: 512px;
         margin: 0 auto; 
     }
+
+    .with-us .row {
+        flex-direction: column;
+        
+    }
 }
 
 @media screen and (min-width: 768px) {
     /*navbar*/
     /*features section*/
+
+    .features-section {
+        padding-bottom: 100px;
+    }
 
     .features-section .col {
         padding: 0 12px;
@@ -355,7 +412,29 @@ breakpoint :
         margin: 0 auto; 
     }
 
+    .testimonial-section .col {
+        display: flex;
+    }
+
+    .testimonial-section figure {
+        margin-right: 50px;
+    }
+
     /*with-us*/
+
+    .with-us .container {
+        max-width: 714px;
+        margin: 0 auto;
+    }
+
+    .with-us .row {
+        flex-direction: row;
+        
+    }
+
+    .with-us .col {
+        flex-basis: calc(100% / 2);
+    }
 
 
 }
@@ -390,13 +469,22 @@ breakpoint :
     /*planning section*/
 
     .planning-section .container {
-        max-width: 1164px;
+        max-width: 900px;
         margin: 0 auto;
     }
 
     .planning-section .col-6 {
         flex-basis: calc((100% / 12) * 6);
         padding: 0 35px;
+    }
+
+    .planning-section .app-development {
+        align-self: flex-end;
+    }
+
+    .planning-section .app-development img {
+        max-width: 320px;
+        
     }
 
     /*testimonials section*/
@@ -410,6 +498,19 @@ breakpoint :
         display: flex;
     }
 
+    .testimonial-section figure {
+        margin-right: 90px;
+    }
+
     /*with-us*/
+
+    .with-us .container {
+        max-width: 1164px;
+        margin: 0 auto;
+    }
+
+    .with-us .col {
+        flex-basis: calc(100% / 3);
+    }
     
 }
