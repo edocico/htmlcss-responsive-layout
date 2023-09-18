@@ -316,6 +316,57 @@ a {
     border-radius: 30px;
 }
 
+/* about us */
+
+.about-us {
+    padding-top: 95px;
+    padding-bottom: 80px;
+}
+
+.about-us h2 {
+    font-size: 60px;
+    color: var(--purple);
+    margin-bottom: 60px;
+}
+
+.about-us img {
+    border-radius: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.about-us p {
+    line-height: 2;
+    margin-bottom: 70px;
+}
+
+.about-us .quote {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    color: var(--purple);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.about-us a {
+    background-color: var(--purple);
+    color: var(--light);
+    border-radius: 30px;
+    line-height: 2;
+    padding: 5px 15px;
+}
+
+.about-us figure {
+    position: relative;
+}
+
+.about-us figure i {
+    font-size: 50px;
+    color: var(--purple);
+    position: absolute;
+    left: 150px;
+}
+
 
 
 /* RESPONSIVE
@@ -366,6 +417,17 @@ breakpoint :
     .with-us .row {
         flex-direction: column;
         
+    }
+
+    /* about us */
+
+    .about-us .container {
+        max-width: 512px;
+        margin: 0 auto;
+    }
+
+    .about-us img {
+        max-width: 180px;
     }
 }
 
@@ -434,6 +496,26 @@ breakpoint :
 
     .with-us .col {
         flex-basis: calc(100% / 2);
+    }
+
+    /* about us */
+
+    .about-us img {
+        max-width: 200px;
+    }
+
+    .about-us .container {
+        max-width: 646px;
+        margin: 0 auto;
+    }
+
+    .about-us .col-8 {
+        flex-basis: calc((100% / 12) * 8);
+        padding-right: 100px;
+    }
+
+    .about-us .col-4 {
+        flex-basis: calc((100% / 12) * 4);
     }
 
 
@@ -511,6 +593,13 @@ breakpoint :
 
     .with-us .col {
         flex-basis: calc(100% / 3);
+    }
+
+    /* about us */
+
+    .about-us .container {
+        max-width: 1074px;
+        margin: 0 auto;
     }
     
 }
