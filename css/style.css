@@ -215,6 +215,10 @@ a {
     padding-right: 30px;
 }
 
+.planning-section .row {
+    row-gap: 30px;
+}
+
 .development {
     background-color: var(--light);
     border-radius: 20px;
