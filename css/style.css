@@ -131,6 +131,10 @@ a {
     height: 100%;
 }
 
+.features-section .row {
+    row-gap: 24px;
+}
+
 .features-section {
     padding-top: 50px;
     padding-bottom: 80px;
@@ -259,6 +263,10 @@ a {
     border-radius: 30px;
     padding: 30px 20px;
     color: white;
+}
+
+.testimonial-section .row {
+    row-gap: 30px;
 }
 
 .testimonial-p {
